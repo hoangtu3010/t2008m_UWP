@@ -27,6 +27,6 @@
         <StackPanel Grid.Column="1" Margin="0 50">
             <TextBlock HorizontalAlignment="Center" FontSize="25px" VerticalAlignment="Center" Margin="0 20" Text="History" TextWrapping="Wrap"/>
             <TextBlock x:Name="historyEmail" HorizontalAlignment="Center" FontSize="16px" VerticalAlignment="Center" Margin="0 20" Text="" TextWrapping="Wrap"/>
-        </StackPanel>
+        </StackPanel> 
     </Grid>
 </Page>

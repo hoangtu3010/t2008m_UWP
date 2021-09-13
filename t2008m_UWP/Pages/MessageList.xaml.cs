@@ -27,7 +27,7 @@ namespace t2008m_UWP.Pages
         public MessageList()
         {
             this.InitializeComponent();
-        }
+        } 
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
