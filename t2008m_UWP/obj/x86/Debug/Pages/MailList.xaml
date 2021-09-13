@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="t2008m_UWP.Pages.MessageList"
+    x:Class="t2008m_UWP.Pages.MailList"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:t2008m_UWP.Pages"
@@ -18,15 +18,16 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Margin="0 50">
             <TextBlock HorizontalAlignment="Center" FontSize="25px" VerticalAlignment="Center" Margin="0 20" Text="Send email" TextWrapping="Wrap"/>
-            <TextBox x:Name="inputTitle" HorizontalAlignment="Center" Width="250px" Height="35px" Margin="0 50 0 0" TextWrapping="Wrap" PlaceholderText="Title"/>
-            <TextBox x:Name="inputEmail" HorizontalAlignment="Center" Width="250px" Height="35px" Margin="0 50 0 0" TextWrapping="Wrap" PlaceholderText="Email"/>
-            <TextBox x:Name="inputMessage" HorizontalAlignment="Center" Width="250px" Height="100px" Margin="0 50 0 0" TextWrapping="Wrap" PlaceholderText="Message" />
-            <Button Click="Button_Click" HorizontalAlignment="Center" Width="250" Height="35" Margin="0 50 0 0">Send Mail</Button>
+            <TextBox x:ConnectionId='3' x:Name="inputTitle" HorizontalAlignment="Center" Width="250px" Height="35px" Margin="0 50 0 0" TextWrapping="Wrap" PlaceholderText="Title"/>
+            <TextBox x:ConnectionId='4' x:Name="inputEmail" HorizontalAlignment="Center" Width="250px" Height="35px" Margin="0 50 0 0" TextWrapping="Wrap" PlaceholderText="Email"/>
+            <TextBox x:ConnectionId='5' x:Name="inputMessage" HorizontalAlignment="Center" Width="250px" Height="100px" Margin="0 50 0 0" TextWrapping="Wrap" PlaceholderText="Message" />
+            <Button x:ConnectionId='6'                      HorizontalAlignment="Center" Width="250" Height="35" Margin="0 50 0 0">Send Mail</Button>
         </StackPanel>
-        
+
         <StackPanel Grid.Column="1" Margin="0 50">
             <TextBlock HorizontalAlignment="Center" FontSize="25px" VerticalAlignment="Center" Margin="0 20" Text="History" TextWrapping="Wrap"/>
-            <TextBlock x:Name="historyEmail" HorizontalAlignment="Center" FontSize="16px" VerticalAlignment="Center" Margin="0 20" Text="" TextWrapping="Wrap"/>
-        </StackPanel> 
+            <TextBlock x:ConnectionId='2' x:Name="historyEmail" HorizontalAlignment="Center" FontSize="16px" VerticalAlignment="Center" Margin="0 20" Text="" TextWrapping="Wrap"/>
+        </StackPanel>
     </Grid>
 </Page>
+

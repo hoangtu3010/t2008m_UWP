@@ -61,6 +61,7 @@
       <RootProperty Name="Content" />
       <RootEvent Name="Click" />
     </RootType>
+    <RootType FullName="t2008m_UWP.Pages.MailList" />
     <RootType FullName="t2008m_UWP.Pages.MessageList" />
     <RootType FullName="t2008m_UWP.Pages.PersonInformation" />
   </Roots.RootTypes>

@@ -53,3 +53,8 @@ D:\VisualStudio\source\t2008m\t2008m_UWP\obj\x86\Debug\Pages\MessageList.g.i.cs
 D:\VisualStudio\source\t2008m\t2008m_UWP\obj\x86\Debug\Pages\MessageList.g.cs
 D:\VisualStudio\source\t2008m\t2008m_UWP\obj\x86\Debug\Pages\MessageList.xaml
 D:\VisualStudio\source\t2008m\t2008m_UWP\obj\x86\Debug\Pages\MessageList.xbf
+D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\MailList.xbf
+D:\VisualStudio\source\t2008m\t2008m_UWP\obj\x86\Debug\Pages\MailList.g.i.cs
+D:\VisualStudio\source\t2008m\t2008m_UWP\obj\x86\Debug\Pages\MailList.g.cs
+D:\VisualStudio\source\t2008m\t2008m_UWP\obj\x86\Debug\Pages\MailList.xaml
+D:\VisualStudio\source\t2008m\t2008m_UWP\obj\x86\Debug\Pages\MailList.xbf

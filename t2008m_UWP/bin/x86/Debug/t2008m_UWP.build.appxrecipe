@@ -73,6 +73,9 @@
     <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\MailList.xbf">
+      <PackagePath>Pages\MailList.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\MessageList.xbf">
       <PackagePath>Pages\MessageList.xbf</PackagePath>
     </AppxPackagedFile>
