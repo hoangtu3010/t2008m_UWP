@@ -1,0 +1,1 @@
+D:\VisualStudio\source\t2008m\t2008m_UWP\t2008m_UWP.csproj;x86
