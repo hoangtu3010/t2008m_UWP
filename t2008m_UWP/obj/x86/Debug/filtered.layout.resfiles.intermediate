@@ -8,8 +8,8 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
 MainPage.xbf
+Pages\Home.xbf
 Pages\MailList.xbf
-Pages\MessageList.xbf
 Pages\PersonInformation.xbf
 t2008m_UWP.xr.xml
 Properties\Default.rd.xml
