@@ -33,13 +33,17 @@ namespace t2008m_UWP.Pages
         {
             listMail.Clear();
 
-            listMail.Add(inputTitle.Text);
-            listMail.Add(inputEmail.Text);
-            listMail.Add(inputMessage.Text);
+            var txt = inputEmail.Text + " -- " + inputTitle.Text + " -- " + inputMessage.Text + "\n ---------------------------------";
+
+            listMail.Add(txt);
+
+            //listMail.Add(inputTitle.Text);
+            //listMail.Add(inputEmail.Text);
+            //listMail.Add(inputMessage.Text);
 
             for (var i = 0; i < listMail.Count; i++)
             {
-                historyEmail.Text += listMail[i] + "\n";
+                historyEmail.Text += listMail[i];
             }
         }
     }

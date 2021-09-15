@@ -28,8 +28,7 @@ namespace t2008m_UWP
         public MainPage()
         {
             this.InitializeComponent();
-            MainFrame.Navigate(typeof(Pages.Home));
-            _mainFrame = MainFrame;
+            MainFrame.Navigate(typeof(Pages.MailList));
         }
 
         private void HomePage(object sender, RoutedEventArgs e)
