@@ -10,5 +10,7 @@ namespace t2008m_UWP.Models
     {
         public string Name { get; set; } //abstract property
         public string MenuPage { get; set; }
+        public string Icon { get; set; }
+        public Category Category { get; set; }
     }
 }

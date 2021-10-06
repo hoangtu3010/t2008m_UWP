@@ -9,7 +9,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <SplitView x:Name="SP" OpenPaneLength="150" DisplayMode="CompactInline" IsPaneOpen="True">
+    <SplitView x:Name="SP" OpenPaneLength="200" DisplayMode="CompactInline" IsPaneOpen="True">
         <SplitView.Pane>
             <RelativePanel Background="Brown">
                 <FontIcon x:Name="click" Tapped="FontIcon_Tapped" FontFamily="Segoe MDL2 Assets" Glyph="&#xE700;" Margin="12 20 20 20"/>
@@ -19,7 +19,17 @@
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="models:MenuItem">
                             <ListViewItem Tapped="ListViewItem_Tapped">
-                                <TextBlock Text="{x:Bind Name}" />
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <FontIcon Grid.Column="0" FontFamily="Segoe MDL2 Assets" Glyph="{x:Bind Icon}" Margin="0 0 20 0" />
+                                    <TextBlock Grid.Column="1" Text="{x:Bind Name}" />
+                                </Grid>
                             </ListViewItem>
                         </DataTemplate>
                     </ListView.ItemTemplate>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using t2008m_UWP.Models;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -22,7 +23,7 @@ namespace t2008m_UWP.Pages
     /// </summary>
     public sealed partial class MailList : Page
     {
-        List<string> listMail = new List<string>();
+        List<MailModel> listMail = new List<MailModel>();
 
         public MailList()
         {
@@ -31,19 +32,29 @@ namespace t2008m_UWP.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            listMail.Clear();
+            //listMail.Clear();
+            var sendDate = inputDate.SelectedDate.Value.DateTime; // lay duoc 1 object tu 1 datepicker
 
-            var txt = inputEmail.Text + " -- " + inputTitle.Text + " -- " + inputMessage.Text + "\n ---------------------------------";
+            var m = new MailModel() { Mail = inputEmail.Text, Subject = inputTitle.Text, Content = inputMessage.Text, SendTime = sendDate };
 
-            listMail.Add(txt);
+            //var txt = inputEmail.Text + " -- " + inputTitle.Text + " -- " + inputMessage.Text + "\n ---------------------------------";
 
-            //listMail.Add(inputTitle.Text);
-            //listMail.Add(inputEmail.Text);
-            //listMail.Add(inputMessage.Text);
+            listMail.Add(m);
 
-            for (var i = 0; i < listMail.Count; i++)
+            PrintMail();
+
+            inputEmail.Text = "";
+            inputTitle.Text = "";
+            inputMessage.Text = "";
+        }
+
+        private void PrintMail()
+        {
+            historyEmail.Text = "";
+
+            foreach (MailModel m in listMail)
             {
-                historyEmail.Text += listMail[i];
+                historyEmail.Text += m.Mail + " -- " + m.Subject + " -- " + m.Content + "\n" + m.SendTime + "\n ------------------------- \n";
             }
         }
     }

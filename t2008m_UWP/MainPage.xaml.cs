@@ -28,19 +28,8 @@ namespace t2008m_UWP
         public MainPage()
         {
             this.InitializeComponent();
-            MainFrame.Navigate(typeof(Pages.MailList));
-        }
-
-        private void HomePage(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Navigate(typeof(Pages.Home));
-
-        }
-
-        private void PersonInfo(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Navigate(typeof(Pages.PersonInformation));
-
+            _mainFrame = MainFrame;
+            MainFrame.Navigate(typeof(Pages.DemoFilePage));
         }
 
         private void FontIcon_Tapped(object sender, TappedRoutedEventArgs e)
@@ -50,10 +39,13 @@ namespace t2008m_UWP
 
         private void Menu_Loaded(object sender, RoutedEventArgs e)
         {
-            var item = new MenuItem() { Name = "Home", MenuPage = "home" };
-            var item2 = new MenuItem() { Name = "Person Infomation", MenuPage = "pi" };
+            var item = new MenuItem() { Name = "Home", MenuPage = "home", Icon = "\ue80f" };
+            var item2 = new MenuItem() { Name = "Person Infomation", MenuPage = "pi", Icon = "\ue8d4" };
+            var item3 = new MenuItem() { Name = "Contact", MenuPage = "contact", Icon = "\ue717" };
             Menu.Items.Add(item);
             Menu.Items.Add(item2);
+            Menu.Items.Add(item3);
+            RenderCategoryToMenu();
         }
 
         private void ListViewItem_Tapped(object sender, TappedRoutedEventArgs e)
@@ -61,8 +53,23 @@ namespace t2008m_UWP
             MenuItem selectedItem = (MenuItem)Menu.SelectedItem;
             switch (selectedItem.MenuPage)
             {
-                case "home": MainFrame.Navigate(typeof(Pages.Home)); break;
+                case "home": MainFrame.Navigate(typeof(Pages.Home), selectedItem); break;
                 case "pi": MainFrame.Navigate(typeof(Pages.PersonInformation)); break;
+                case "category": MainFrame.Navigate(typeof(Pages.CategoryPage), selectedItem.Category); break;
+            }
+        }
+
+        public async void RenderCategoryToMenu()
+        {
+            // dung Sevieces de lay obj Categories
+            Services.MenuSevices sevices = new Services.MenuSevices();
+            Models.Categories categories = await sevices.GetMenu();
+            if(categories != null)
+            {
+                foreach(Models.Category c in categories.data)
+                {
+                    Menu.Items.Add(new MenuItem() { Name = c.name, MenuPage = "category", Icon = "\ue71d", Category = c });
+                }
             }
         }
     }

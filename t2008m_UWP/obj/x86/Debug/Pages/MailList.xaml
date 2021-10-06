@@ -20,8 +20,9 @@
             <TextBlock HorizontalAlignment="Center" FontSize="25px" VerticalAlignment="Center" Margin="0 20" Text="Send email" TextWrapping="Wrap"/>
             <TextBox x:ConnectionId='3' x:Name="inputTitle" HorizontalAlignment="Center" Width="250px" Height="35px" Margin="0 50 0 0" TextWrapping="Wrap" PlaceholderText="Title"/>
             <TextBox x:ConnectionId='4' x:Name="inputEmail" HorizontalAlignment="Center" Width="250px" Height="35px" Margin="0 50 0 0" TextWrapping="Wrap" PlaceholderText="Email"/>
-            <TextBox x:ConnectionId='5' x:Name="inputMessage" HorizontalAlignment="Center" Width="250px" Height="100px" Margin="0 50 0 0" TextWrapping="Wrap" PlaceholderText="Message" />
-            <Button x:ConnectionId='6'                      HorizontalAlignment="Center" Width="250" Height="35" Margin="0 50 0 0">Send Mail</Button>
+            <DatePicker x:ConnectionId='5' x:Name="inputDate" HorizontalAlignment="Center" Width="300px" Height="35px" Margin="0 50 0 0" />
+            <TextBox x:ConnectionId='6' x:Name="inputMessage" HorizontalAlignment="Center" Width="250px" Height="100px" Margin="0 50 0 0" TextWrapping="Wrap" PlaceholderText="Message" />
+            <Button x:ConnectionId='7'                      HorizontalAlignment="Center" Width="250" Height="35" Margin="0 50 0 0">Send Mail</Button>
         </StackPanel>
 
         <StackPanel Grid.Column="1" Margin="0 50">

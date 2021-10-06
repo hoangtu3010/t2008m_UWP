@@ -1,4 +1,6 @@
 WinMetadata\Windows.winmd
+SQLitePCL.Ext.dll
+SQLitePCL.Ext.pri
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -8,8 +10,18 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
 MainPage.xbf
+Pages\CategoryPage.xbf
+Pages\DemoFilePage.xbf
+Pages\FoodPage.xbf
 Pages\Home.xbf
+Pages\labs2\Contact.xbf
+Pages\labs2\Customer.xbf
+Pages\labs2\FormContact.xbf
+Pages\labs2\Home.xbf
+Pages\labs2\ListContact.xbf
+Pages\labs2\Mail.xbf
 Pages\MailList.xbf
 Pages\PersonInformation.xbf
 t2008m_UWP.xr.xml
 Properties\Default.rd.xml
+sqlite3.dll

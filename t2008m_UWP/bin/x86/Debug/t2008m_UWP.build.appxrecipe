@@ -28,11 +28,23 @@
     <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\t2008m_UWP.exe">
       <PackagePath>entrypoint\t2008m_UWP.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hoang\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hoang\.nuget\packages\sqlitepcl\3.8.7.2\lib\netcore451\SQLitePCL.dll">
+      <PackagePath>SQLitePCL.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hoang\.nuget\packages\sqlitepcl\3.8.7.2\build\netcore451\SQLitePCL.Ext.dll">
+      <PackagePath>SQLitePCL.Ext.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -73,8 +85,35 @@
     <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\CategoryPage.xbf">
+      <PackagePath>Pages\CategoryPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\DemoFilePage.xbf">
+      <PackagePath>Pages\DemoFilePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\FoodPage.xbf">
+      <PackagePath>Pages\FoodPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\Home.xbf">
       <PackagePath>Pages\Home.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\labs2\Contact.xbf">
+      <PackagePath>Pages\labs2\Contact.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\labs2\Customer.xbf">
+      <PackagePath>Pages\labs2\Customer.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\labs2\FormContact.xbf">
+      <PackagePath>Pages\labs2\FormContact.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\labs2\Home.xbf">
+      <PackagePath>Pages\labs2\Home.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\labs2\ListContact.xbf">
+      <PackagePath>Pages\labs2\ListContact.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\labs2\Mail.xbf">
+      <PackagePath>Pages\labs2\Mail.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VisualStudio\source\t2008m\t2008m_UWP\bin\x86\Debug\Pages\MailList.xbf">
       <PackagePath>Pages\MailList.xbf</PackagePath>
