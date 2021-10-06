@@ -33,7 +33,11 @@
 
             <TextBox x:Name="inputProduct" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" PlaceholderText="Product..." TextWrapping="Wrap" FontSize="16"/>
             <TextBox x:Name="inputDescription" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" PlaceholderText="Description..." TextWrapping="Wrap" FontSize="16"/>
-            <TextBox x:Name="inputImage" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" PlaceholderText="Image..." TextWrapping="Wrap" FontSize="16"/>
+            <!--<TextBox x:Name="inputImage" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" PlaceholderText="Image..." TextWrapping="Wrap" FontSize="16"/>-->
+            <ComboBox Foreground="#fff" Loaded="inputImage_Loaded" VerticalAlignment="Center"   Grid.Row="2" Grid.Column="1" x:Name="inputImage" Height="40" Width="296">
+                 <ComboBoxItem>
+                 </ComboBoxItem>
+            </ComboBox>
             <Button Content="Order" Click="Button_Click" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center"/>
         </Grid>
         <Grid Grid.Row="1" >
