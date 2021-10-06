@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="t2008m_UWP.Pages.practical.ProductManagement"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:t2008m_UWP.Pages.practical"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:t2008m_UWP.Models.practical"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Padding="30,0,0,0" Grid.Row="0" FontSize="16" VerticalAlignment="Center" Grid.Column="0" Text="Product:"/>
+            <TextBlock Padding="30,0,0,0" Grid.Row="1" FontSize="16" VerticalAlignment="Center" Grid.Column="0" Text="Description:"/>
+            <TextBlock Padding="30,0,0,0" Grid.Row="2" FontSize="16" VerticalAlignment="Center" Grid.Column="0" Text="Image:"/>
+
+            <TextBox x:Name="inputProduct" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" PlaceholderText="Product..." TextWrapping="Wrap" FontSize="16"/>
+            <TextBox x:Name="inputDescription" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" PlaceholderText="Description..." TextWrapping="Wrap" FontSize="16"/>
+            <TextBox x:Name="inputImage" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" PlaceholderText="Image..." TextWrapping="Wrap" FontSize="16"/>
+            <Button Content="Order" Click="Button_Click" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="1" >
+            <ScrollViewer>
+                <GridView Padding="50,50,0,0" x:Name="ProductList" Loaded="ProductList_Loaded">
+                    <GridView.ItemTemplate>
+                        <DataTemplate x:DataType="models:ProductManagerModel" >
+                            <GridViewItem>
+                                <StackPanel Width="250" Padding="20,0,20,0">
+                                    <Image Width="250" Source="{x:Bind Image }"/>
+                                    <TextBlock  Text="{x:Bind ProductName}"/>
+                                    <TextBlock Text="{x:Bind Description}"/>
+                                </StackPanel>
+                            </GridViewItem>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>
