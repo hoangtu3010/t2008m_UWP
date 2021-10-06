@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="t2008m_UWP.Pages.labs2.Contact"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:t2008m_UWP.Pages.labs2"
+    xmlns:models="using:t2008m_UWP.Models.labs2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 40 0 20" Text="Contact" FontSize="40"/>
+
+        <Button x:Name="butAddCon" Click="Button_Click" VerticalAlignment="Top" Visibility="Visible" HorizontalAlignment="Right" Margin="0 150 50 0" CornerRadius="5">Add Contact</Button>
+
+        <Button x:Name="butBackCon" Click="butBackCon_Click" VerticalAlignment="Top" Visibility="Collapsed"  HorizontalAlignment="Left" Margin="50 150 0 0" CornerRadius="5">Back</Button>
+
+
+        <ScrollViewer VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid>
+                <Frame x:Name="ContactFrame"/>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+
+</Page>

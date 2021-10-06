@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="t2008m_UWP.Pages.labs2.Mail"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:t2008m_UWP.Pages.labs2"
+    xmlns:models="using:t2008m_UWP.Models.labs2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 40 0 20" Text="History send mail" FontSize="40"/>
+
+        <ScrollViewer VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid>
+                <ListView ItemsSource="{x:Bind mails}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="models:MailModel">
+                            <Border BorderBrush="Orange" BorderThickness="1"
+                                    Padding="8" Margin="10" CornerRadius="10">
+                                <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="200"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="{x:Bind Email}" VerticalAlignment="Center"/>
+                                    
+                                    <StackPanel Grid.Column="1">
+                                        <TextBlock  Text="{x:Bind Title}" />
+                                        <TextBlock  Text="{x:Bind Message }" />
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
